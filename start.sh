@@ -1,6 +1,7 @@
 # !/bin/bash
 
 #
+echo $ENV_TO_INJECT
 
 # Start autogrid.
 cd x86_64Linux2
