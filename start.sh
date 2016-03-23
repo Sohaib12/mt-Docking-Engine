@@ -1,7 +1,8 @@
 # !/bin/bash
 
-#
-echo $ENV_TO_INJECT
+# Fire up another bash script that checks the type of...
+chmod +x /table.sh
+./table.sh $ENV_TO_INJECT
 
 # Start autogrid.
 cd x86_64Linux2
