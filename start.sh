@@ -1,7 +1,6 @@
 # !/bin/bash
 
 # Fire up another bash script that checks the type of...
-chmod +x /table.sh
 ./table.sh "$ENV_TO_INJECT"
 
 # Start autogrid.
