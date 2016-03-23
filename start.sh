@@ -5,7 +5,7 @@ chmod +x /table.sh
 bash table.sh "$ENV_TO_INJECT"
 
 # İnstall the necessary packages for running autogrid and autodock.
-pip3 install -r /yavst-master/requirements/requirements.txt
+pip3 install -r /yavst/requirements/requirements.txt
 
 # Start autogrid.
 cd x86_64Linux2
