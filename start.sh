@@ -11,7 +11,7 @@ if [ "$ENV_TO_INJECT" = "c4.large" ]; then
   for i in {1..2}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
     
 elif [ "$ENV_TO_INJECT" = "c4.xlarge" ]; then
