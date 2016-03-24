@@ -8,10 +8,16 @@
 # Recieve files/file names.
 
 
-# Create gpf files from target files.
+# If target is in .pdb format, then create .pdbqf file using tutorial. Otherwise skip this step.
 
 
-# Create dpf files from ligand files.
+# If ligand is in .pdb format, then create .pdbqf file using tutorial. Otherwise skip this step.
+
+
+# Create gpf files from target files using numbers and other parameters.
+
+
+# Create dpf files from ligand files using numbers and other parameters.
 
 
 # Run autogrid using gpd file as argument.
