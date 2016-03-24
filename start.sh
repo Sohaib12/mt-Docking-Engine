@@ -55,12 +55,12 @@ elif [ $ENV_TO_INJECT = "c3.8xlarge" ]; then
 fi
 
 # Start autogrid.
-cd x86_64Linux2
-./autogrid4
+#cd x86_64Linux2
+#./autogrid4
 
 # Start autodock.
-./autodock4
+#./autodock4
 
 # Go to previous directory.
-cd ..
+#cd ..
 
