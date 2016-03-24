@@ -19,7 +19,7 @@ elif [ "$ENV_TO_INJECT" = "c4.xlarge" ]; then
   for i in {1..4}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c4.2xlarge" ]; then
@@ -27,7 +27,7 @@ elif [ "$ENV_TO_INJECT" = "c4.2xlarge" ]; then
   for i in {1..8}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c4.4xlarge" ]; then
@@ -35,7 +35,7 @@ elif [ "$ENV_TO_INJECT" = "c4.4xlarge" ]; then
   for i in {1..16}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c4.8xlarge" ]; then
@@ -43,7 +43,7 @@ elif [ "$ENV_TO_INJECT" = "c4.8xlarge" ]; then
   for i in {1..36}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c3.large" ]; then
@@ -51,7 +51,7 @@ elif [ "$ENV_TO_INJECT" = "c3.large" ]; then
   for i in {1..2}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c3.xlarge" ]; then
@@ -59,7 +59,7 @@ elif [ "$ENV_TO_INJECT" = "c3.xlarge" ]; then
   for i in {1..4}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c3.2xlarge" ]; then
@@ -67,7 +67,7 @@ elif [ "$ENV_TO_INJECT" = "c3.2xlarge" ]; then
   for i in {1..8}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 
 elif [ "$ENV_TO_INJECT" = "c3.4xlarge" ]; then
@@ -75,7 +75,7 @@ elif [ "$ENV_TO_INJECT" = "c3.4xlarge" ]; then
   for i in {1..16}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
     
 elif [ "$ENV_TO_INJECT" = "c3.8xlarge" ]; then
@@ -83,7 +83,7 @@ elif [ "$ENV_TO_INJECT" = "c3.8xlarge" ]; then
   for i in {1..32}
     do 
       touch Procfile
-      echo "worker: " >> Procfile
+      echo "worker: ./autodockrunner.sh" >> Procfile
     done
 fi
 
