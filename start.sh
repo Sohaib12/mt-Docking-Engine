@@ -88,14 +88,3 @@ fi
 
 foreman check
 foreman start
-
-# Start autogrid.
-#cd x86_64Linux2
-#./autogrid4
-
-# Start autodock.
-#./autodock4
-
-# Go to previous directory.
-#cd ..
-
