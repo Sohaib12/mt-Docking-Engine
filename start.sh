@@ -7,7 +7,7 @@ bash table.sh "$ENV_TO_INJECT"
 # İnstall the necessary packages for running autogrid and autodock.
 cd yavst
 cd requirements
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 cd ..
 cd ..
