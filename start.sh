@@ -6,6 +6,7 @@ chmod +x /autodockrunner.sh
 # Check capacity and then dynamically create a Procfile that utilizes all the capacity.
 # Also it will start foreman to run autodockrunner. 
 # And will fire up the Procfile that will give the available cores their tasks.
+touch Procfile
 echo "this should be strange" > Procfile.txt
 
 if [ "$ENV_TO_INJECT" = "c4.large" ]; then
