@@ -9,10 +9,10 @@
 
 
 # If target is in .pdb format, then create .pdbqf file using tutorial. Otherwise skip this step.
-
+#python workingdirectory/prepare_target.py -l filename.pdb -o ABC.pdbqt
 
 # If ligand is in .pdb format, then create .pdbqf file using tutorial. Otherwise skip this step.
-
+#python workingdirectory/prepare_ligand.py -l filename.pdb -o ABC.pdbqt
 
 # Create gpf files from target files using numbers and other parameters.
 
