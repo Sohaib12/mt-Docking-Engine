@@ -6,14 +6,15 @@ chmod +x /autodockrunner.sh
 # Check capacity and then dynamically create a Procfile that utilizes all the capacity.
 # Also it will start foreman to run autodockrunner. 
 # And will fire up the Procfile that will give the available cores their tasks.
-touch Procfile
-echo "this should be strange" > Procfile
+#touch Procfile
+#echo "this should be strange" > Procfile
 
 if [ "$ENV_TO_INJECT" = "c4.large" ]; then
   echo "It has 2 cores"
-  for i in {1..2}
+  for i in {1..4}
     do 
-      echo "it should run two times" > Procfile
+      touch Procfile
+      echo "it should run two times" >> Procfile
     done
   foreman check
   foreman start
