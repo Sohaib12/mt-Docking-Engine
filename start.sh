@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # Make the following bash scripts executable.
 chmod +x /autodockrunner.sh
