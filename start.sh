@@ -14,7 +14,7 @@ if [ "$ENV_TO_INJECT" = "c4.large" ]; then
   for i in {1..4}
     do 
       touch Procfile
-      echo "it should run two times" >> Procfile
+      echo "worker: " >> Procfile
     done
   foreman check
   foreman start
