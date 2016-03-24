@@ -8,11 +8,11 @@ chmod +x /autodockrunner.sh
 #bash table.sh "$ENV_TO_INJECT"
 
 # İnstall the necessary packages for running autogrid and autodock.
-cd yavst
-cd requirements
-pip install -r requirements.txt
-cd ..
-cd ..
+#cd yavst
+#cd requirements
+#pip install -r requirements.txt
+#cd ..
+#cd ..
 
 # Check capacity and then dynamically create a Procfile that utilizes all the capacity.
 # Also it will start foreman to run autodockrunner. 
