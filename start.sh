@@ -1,25 +1,16 @@
 # !/bin/bash
 
 # Make the following bash scripts executable.
-chmod +x /table.sh
 chmod +x /autodockrunner.sh
-
-# Fire up another bash script that checks the capacity...
-#bash table.sh "$ENV_TO_INJECT"
-
-# İnstall the necessary packages for running autogrid and autodock.
-#cd yavst
-#cd requirements
-#pip install -r requirements.txt
-#cd ..
-#cd ..
 
 # Check capacity and then dynamically create a Procfile that utilizes all the capacity.
 # Also it will start foreman to run autodockrunner. 
 # And will fire up the Procfile that will give the available cores their tasks.
+touch Procfile
 if [ $ENV_TO_INJECT = "c4.large" ]; then
   echo "It has 2 cores"
-  for i in 1 2
+  open -e Procfile
+  for i in {1..2}
     do 
       echo "it should run two times"
     done
