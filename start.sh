@@ -13,8 +13,7 @@ if [ "$ENV_TO_INJECT" = "c4.large" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+    
 elif [ "$ENV_TO_INJECT" = "c4.xlarge" ]; then
   echo "It has 4 cores"
   for i in {1..4}
@@ -22,8 +21,7 @@ elif [ "$ENV_TO_INJECT" = "c4.xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c4.2xlarge" ]; then
   echo "It has 8 cores"
   for i in {1..8}
@@ -31,8 +29,7 @@ elif [ "$ENV_TO_INJECT" = "c4.2xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c4.4xlarge" ]; then
   echo "It has 16 cores"
   for i in {1..16}
@@ -40,8 +37,7 @@ elif [ "$ENV_TO_INJECT" = "c4.4xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c4.8xlarge" ]; then
   echo "It has 36 cores"
   for i in {1..36}
@@ -49,8 +45,7 @@ elif [ "$ENV_TO_INJECT" = "c4.8xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c3.large" ]; then
   echo "It has 2 cores"
   for i in {1..2}
@@ -58,8 +53,7 @@ elif [ "$ENV_TO_INJECT" = "c3.large" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c3.xlarge" ]; then
   echo "It has 4 cores"
   for i in {1..4}
@@ -67,8 +61,7 @@ elif [ "$ENV_TO_INJECT" = "c3.xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c3.2xlarge" ]; then
   echo "It has 8 cores"
   for i in {1..8}
@@ -76,8 +69,7 @@ elif [ "$ENV_TO_INJECT" = "c3.2xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+
 elif [ "$ENV_TO_INJECT" = "c3.4xlarge" ]; then
   echo "It has 16 cores"
   for i in {1..16}
@@ -85,8 +77,7 @@ elif [ "$ENV_TO_INJECT" = "c3.4xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
+    
 elif [ "$ENV_TO_INJECT" = "c3.8xlarge" ]; then
   echo "It has 32 cores"
   for i in {1..32}
@@ -94,9 +85,10 @@ elif [ "$ENV_TO_INJECT" = "c3.8xlarge" ]; then
       touch Procfile
       echo "worker: " >> Procfile
     done
-  foreman check
-  foreman start
 fi
+
+foreman check
+foreman start
 
 # Start autogrid.
 #cd x86_64Linux2
