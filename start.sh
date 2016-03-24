@@ -7,7 +7,7 @@ chmod +x /autodockrunner.sh
 # Also it will start foreman to run autodockrunner. 
 # And will fire up the Procfile that will give the available cores their tasks.
 touch Procfile
-echo "this should be strange" > Procfile.txt
+echo "this should be strange" > Procfile
 
 if [ "$ENV_TO_INJECT" = "c4.large" ]; then
   echo "It has 2 cores"
