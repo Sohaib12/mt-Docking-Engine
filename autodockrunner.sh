@@ -6,7 +6,14 @@
 # And then it should run autodock with the dpf file in arguments.
 
 # Recieve files/file names.
+#URLS=”www.abcd.com/page1/file1.pdf \
+#http://www.efgh.com/page2/file2.ogg \
+#http://www.ijkl.com/page3/file3.jpg&#8221;
 
+#for u in $URLS
+#do
+#    wget -b -P /home/user/Downloads $u –no-check-certificate –user=username –password=password
+#done
 
 # If target is in .pdb format, then create .pdbqf file using tutorial. Otherwise skip this step.
 #python workingdirectory/prepare_target.py -l filename.pdb -o ABC.pdbqt
