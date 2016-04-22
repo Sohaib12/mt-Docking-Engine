@@ -1,10 +1,6 @@
-#!/bin/bash
+#!/bin/bash                                                                                                        
+set -e
 
-# Run the java code..
-
-
-
-# Listen for an exit command.
-
-trap 'exit 0' SIGTERM
-while true; do :; done
+# Run the java code..                                                                                              
+exec javac HelloWorld.java
+exec java HelloWorld
