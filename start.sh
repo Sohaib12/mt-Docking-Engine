@@ -1,7 +1,7 @@
-#!/bin/bash                                                                                                        
-#set -e
+#!/bin/bash
 
-# Run the java code..                                                                                              
-#exec javac HelloWorld.java
-#exec java HelloWorld
-#while true; do echo 'Hit CTRL+C'; sleep 1; done
+cd ComputeUnitNetworkManager/src/
+
+# Run the java code..
+javac -cp .:/ComputeUnitNetworkManager/lib/* ComputeUnitNetworkManager.java
+java -cp .:/ComputeUnitNetworkManager/lib/* ComputeUnitNetworkManager
